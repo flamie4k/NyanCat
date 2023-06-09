@@ -57,13 +57,11 @@
                    <p><i>Rest in peace, Marty.</i></p>
                 </div>
             <div class="orginimg">
-                <img src="nyancat.gif" width="100%" height="auto">
                 <br>
                 <br>
                 <div class="audio-player">
                     <audio id="myAudio" src="nyan-cat.mp3"></audio>
-                    <p>Better&nbsp;with&nbsp;audio.&nbsp;Play&nbsp;:&nbsp;</p>
-                    <button id="playButton" onclick="togglePlay()">▷</button>
+                    <button id="playButton" onclick="togglePlay()"><img src="nyancat.gif" width="100%" height="auto"></button>
                 </div>
             </div>
         </div>
@@ -112,10 +110,8 @@
               if (audio.paused) {
                 audio.volume = 0.08;
                 audio.play();
-                playButton.innerHTML = "II";
               } else {
                 audio.pause();
-                playButton.innerHTML = "▷";
               }
             }
           </script>      
