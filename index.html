@@ -25,22 +25,23 @@
         <div class="nav">
             <nav>
                 <ul>
-                    <li><a href="https://flamie4k.github.io/NyanCat/">Home</a></li>
+                    <li>Home</li>
                     <li><a href="https://en.wikipedia.org/wiki/Nyan_Cat">Wiki</a></li>
-                    <li><a href="https://github.com/flamie4k/NyanCat">Source Code</a></li>
+                    <li>Source Code</li>
                 </ul>
             </nav>
         </div>
+    </body>
         <!-- Closing header -->
         </div>
         <!-- 1ST SECTION -->
         <div class="first_body_section">
             <div class="nyancat_img"></div>
             <div class="nyancat_text">
-            <p> Nyan Cat is a YouTube video uploaded in April 2011, which became an internet meme.<br><br>
-            The video merged a Japanese pop song with an animated cartoon cat with a Pop-Tart for a<br><br>
-            torso flying through space and leaving a rainbow trail behind.<br><br>
-            The video ranked at number five on the list of most viewed YouTube videos in 2011.<br><br>
+            <p> Nyan Cat is a YouTube video uploaded in April 2011, which became an internet meme.<br><br><br>
+            The video merged a Japanese pop song with an animated cartoon cat with a Pop-Tart for a<br><br><br>
+            torso flying through space and leaving a rainbow trail behind.<br><br><br>
+            The video ranked at number five on the list of most viewed YouTube videos in 2011.<br><br><br>
             </p>
             </div>
         </div>
@@ -51,12 +52,19 @@
                 <p>On April 2, 2011, the GIF animation of the cat was posted by 25-year-old Christopher Torres of Dallas, Texas, who uses <br><br>the name "prguitarman",
                    on his website LOL-Comics. Torres explained in an interview where the idea for the animation came from: "I was doing a donation drive for the<br><br>
                    Red Cross and in-between drawings in my Livestream video chat, two different people mentioned I should draw a 'Pop Tart' and a 'cat'." <br><br>
-                   In response, he created a hybrid image of a Pop-Tart and a cat, which was developed a few days later into<br><br> the animated GIF.Nyan Cat was based
+                   In response, he created a hybrid image of a Pop-Tart and a cat, which was developed a few days later into<br> <br> the animated GIF.Nyan Cat was based
                    on a real cat: Torres' pet cat Marty, who died in November 2012 from feline infectious peritonitis.</p>
                    <p><i>Rest in peace, Marty.</i></p>
                 </div>
             <div class="orginimg">
-                <img src="nyancat.gif" width="500" height="450">
+                <img src="nyancat.gif" width="100%" height="auto">
+                <br>
+                <br>
+                <div class="audio-player">
+                    <audio id="myAudio" src="nyan-cat.mp3"></audio>
+                    <p>Better&nbsp;with&nbsp;audio.&nbsp;Play&nbsp;:&nbsp;</p>
+                    <button id="playButton" onclick="togglePlay()">▷</button>
+                </div>
             </div>
         </div>
         <hr>
@@ -96,6 +104,20 @@
         <br>
         <p style="text-align:right">Rights to the site claimed by Flamie.<br>© 2023 Flamie4K</p>
         </div>  
-        </div>          
+        </div>  
+        <script>
+            var audio = document.getElementById("myAudio");
+            var playButton = document.getElementById("playButton");          
+            function togglePlay() {
+              if (audio.paused) {
+                audio.volume = 0.08;
+                audio.play();
+                playButton.innerHTML = "II";
+              } else {
+                audio.pause();
+                playButton.innerHTML = "▷";
+              }
+            }
+          </script>      
     </body>
 </html>
