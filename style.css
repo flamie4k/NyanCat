@@ -1,0 +1,125 @@
+/* Division styling */
+/* headers */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top:0;
+}
+.navicon{
+  background-image:url('Navicon2.png');
+  height:auto;
+  width: 420px;
+  background-size: cover;
+  background-position:bottom;
+}
+.mid_header{
+  padding-top:20px;
+  background-color: black;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+.nav{
+  display:inline-block;
+  font-size: 25px;
+  width: 420px;
+  text-align: right;
+  padding:20px;
+  background-color:black;
+
+}
+/* body section */
+
+/* 1st body section */
+.first_body_section{
+  display: flex;
+  justify-content: space-between;
+  padding:20px;
+}
+.nyancat_img{
+  background-image: url("Nyan-Cat-HD-Backgrounds.jpg");
+  height: 400px;
+  padding-left: 20px;
+  background-size: contain;
+  background-position:left;
+  background-repeat: no-repeat;
+  width: 100%
+}
+.nyancat_text{
+  width:100%;
+  padding:40px;
+}
+/* 2nd body section */
+.second_body_section{
+  display: flex;
+  justify-content: space-between;
+  padding:20px
+}
+.orgintext{
+  width:100%;
+  height: 200px;
+  padding: 40px;
+}
+.originimg{
+  height:150px;
+  width: 200px;
+  padding:30px
+}
+/* third body section */
+.third_body_section{
+  display: flex;
+  justify-content: space-between;
+}
+.thirdbodytext{
+  text-align: center;
+  height:auto;
+  width:100%
+}
+.thirdbodyimg{
+  padding:20px;
+  height:auto;
+  font-size: 10px;
+  text-align: center;
+}
+.footer {
+  height:150px;
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerlinks{
+  /* text-align: center; */
+  display: block;
+  width:100%;
+  height:auto;
+  text-align: left;
+}
+.footerimg{
+  background-image: url("HD-Nyan-Cat-Background-removebg-preview.png");
+  width: 100%;
+  height:250px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+/* Elements styling */
+ul{
+    list-style: none;
+  }
+ul li{
+  display:inline-block;
+  margin: 8px;
+  text-align: center;
+}
+
+body{
+display: block;
+background-color: black;
+font-family: 'Quicksand', sans-serif;
+line-height: 2;
+}
+h1,p,li,a{
+  color:white;
+  text-decoration: none;
+}
