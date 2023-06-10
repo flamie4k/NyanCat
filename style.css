@@ -275,9 +275,10 @@ h1, p, li, a {
 
   .footerlinks {
     width: 100%;
-    text-align: center;
     height:auto;
     display:block;
-    font-size:14px;
+  }
+  .footerlinks a{
+    font-size: 13px;
   }
 }
